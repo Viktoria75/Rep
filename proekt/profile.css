@@ -1,0 +1,40 @@
+.profile-container{
+    height:400px;
+    flex-direction:column;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.left-container{
+    background-color: rgb(146, 146, 146);
+    padding:20px;
+    margin:30px
+    /* flex-direction: row; */
+}
+
+.right-container{
+    background-color:rgb(146, 146, 146);
+    padding:20px;
+    margin:30px;
+    /* flex-direction: row; */
+}
+
+.flex{
+    background-color: #333;
+}
+
+.pfp{
+    height:200px;
+    background-color: #333;
+}
+
+.image{
+    height:60px;
+    background-color: #333;
+}
+
+@media screen and (max-width: 700px) {
+    .right-container, .left-container {   
+      flex-direction: row;
+    }
+  }

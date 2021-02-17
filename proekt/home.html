@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="page.css">
+    <script src="main.js"></script>
+    <link href="https://hbogo.bg/" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Site</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar" id="navbar">
+      <a href="home.html"><i class="fa fa-home"></i></a>
+      <a href="home.html">Home</a>
+      <a href="news.html">News</a>
+      <a style="font-size:15px;" class="icon" onclick="Nav()">&#9776;</a>
+        <div class="dropdown">
+          <button class="dropbtn">Movies </button>
+            <div class="dropdown-content">
+              <a href="horror.html">Horror</a>
+              <a href="adventure.html">Adventure</a>
+              <a href="action.html">Action</a>
+            </div>
+        </div> 
+        <div class='rightside'>
+          <input class="input" type="text" placeholder="Type here..">
+          <a href="#"><i class="fa fa-search"></i></a>
+            <div class="dropdown second">
+              <button class="dropbtn second" href="profile.html">Profile</button>
+               <div class="dropdown-content second">
+                <a href="profile.html">Go to Profile</a>
+                <a class="open" onclick="openLogin()">Add another account</a>
+                <a href="#">Logout</a>
+               </div>
+            </div>
+        </div>
+    </nav>
+  </header>
+    <main>
+        <h1>Popular today</h1>
+
+        <section class="movies popular">       
+            <div class="movie-card 1">
+              <div class="movie-image" onclick="openDescription()" >
+                  <img src="//cdn.hbogo.eu/images/2608A8DF-AFAD-4B00-80ED-79DECCEEB0DD/561_316.jpg" alt="Movie image" width="400" height="200">
+                  <!-- <div class="movie-info">
+                    <p>Watch Time: 3hrs</p>
+                    <p>19.99$</p>
+                  </div> -->
+              </div>
+            </div>
+          
+            <div class="movie-card 2">
+                <div class="movie-image">
+                    <img src="//cdn.hbogo.eu/images/34140111-F854-47A9-A740-259E1EFB1A71/561_316.jpg" alt="Movie image" width="400" height="200">
+                    <!-- <div class="movie-info 2">
+                        <p>Watch Time: 2hrs</p>
+                        <p>10.00$</p>
+                      </div> -->
+                </div>
+              </div>
+          
+              <div class="movie-card 3">
+                <div class="movie-image">
+                  <img src="//cdn.hbogo.eu/images/F71EAF8C-4D44-41BE-95DB-092E28AA01F4/561_316.jpg" alt="Movie image" width="400" height="200">
+                    <!-- <div class="movie-info 3">
+                        <p>Watch Time: 1hr 30mins</p>
+                        <p>14.50$</p>
+                      </div> -->
+                </div>
+              </div>
+
+              <div class="movie-card 3">
+                <div class="movie-image">
+                  <img src="//cdn.hbogo.eu/images/F71EAF8C-4D44-41BE-95DB-092E28AA01F4/561_316.jpg" alt="Movie image" width="400" height="200">
+                    <!-- <div class="movie-info 3">
+                        <p>Watch Time: 1hr 30mins</p>
+                        <p>14.50$</p>
+                      </div> -->
+                </div>
+              </div>
+
+              <div class="movie-card 3">
+                <div class="movie-image">
+                  <img src="//cdn.hbogo.eu/images/F71EAF8C-4D44-41BE-95DB-092E28AA01F4/561_316.jpg" alt="Movie image" width="400" height="200">
+                    <!-- <div class="movie-info 3">
+                        <p>Watch Time: 1hr 30mins</p>
+                        <p>14.50$</p>
+                      </div> -->
+                </div>
+              </div>
+
+              <div class="movie-card 3">
+                <div class="movie-image">
+                  <img src="//cdn.hbogo.eu/images/F71EAF8C-4D44-41BE-95DB-092E28AA01F4/561_316.jpg" alt="Movie image" width="400" height="200">
+                    <!-- <div class="movie-info 3">
+                        <p>Watch Time: 1hr 30mins</p>
+                        <p>14.50$</p>
+                      </div> -->
+                </div>
+              </div>
+
+              <div class="movie-card 3">
+                <div class="movie-image">
+                  <img src="//cdn.hbogo.eu/images/F71EAF8C-4D44-41BE-95DB-092E28AA01F4/561_316.jpg" alt="Movie image" width="400" height="200">
+                    <!-- <div class="movie-info 3">
+                        <p>Watch Time: 1hr 30mins</p>
+                        <p>14.50$</p>
+                      </div> -->
+                </div>
+              </div>
+
+              <div class="movie-card 3">
+                <div class="movie-image">
+                  <img src="//cdn.hbogo.eu/images/F71EAF8C-4D44-41BE-95DB-092E28AA01F4/561_316.jpg" alt="Movie image" width="400" height="200">
+                    <!-- <div class="movie-info 3">
+                        <p>Watch Time: 1hr 30mins</p>
+                        <p>14.50$</p>
+                      </div> -->
+                </div>
+              </div>
+
+          </section>
+
+
+        <h1>Continue Watching</h1>
+
+        <section class="movies watching">       
+            <div class="movie-card 1">
+              <div class="movie-image">
+                <img src="//cdn.hbogo.eu/images/2608A8DF-AFAD-4B00-80ED-79DECCEEB0DD/561_316.jpg" alt="Movie image" width="400" height="200">
+                <div class="progbar_container">
+                  <div class="progbar"></div>
+                </div>
+                  <!-- <div class="movie-info">
+                    <p>Watch Time: 3hrs</p>
+                    <p>19.99$</p>
+                  </div> -->
+              </div>
+            </div>
+          
+            <div class="movie-card 2">
+                <div class="movie-image">
+                  <img src="//cdn.hbogo.eu/images/34140111-F854-47A9-A740-259E1EFB1A71/561_316.jpg" alt="Movie image" width="400" height="200">
+                  <div class="progbar_container">
+                    <div class="progbar"></div>
+                  </div>
+                    <!-- <div class="movie-info 2">
+                        <p>Watch Time: 2hrs</p>
+                        <p>10.00$</p>
+                      </div> -->
+                </div>
+              </div>
+          
+              <div class="movie-card 3">
+                <div class="movie-image">
+                  <img src="//cdn.hbogo.eu/images/F71EAF8C-4D44-41BE-95DB-092E28AA01F4/561_316.jpg" alt="Movie image" width="400" height="200">
+                  <div class="progbar_container">
+                    <div class="progbar"></div>
+                  </div>
+                    <!-- <div class="movie-info 3">
+                        <p>Watch Time: 1hr 30mins</p>
+                        <p>14.50$</p>
+                      </div> -->
+                </div>
+              </div>
+          </section>
+
+          <div class="login-popup" id="LoginPopup">
+            <form class="form-container">
+              <h1>Login</h1>
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+              <button type="submit" class="btn">Login</button>
+              <button type="submit" class="btn cancel" onclick="closeLogin()">Close</button>
+            </form>
+          </div> 
+
+          <div id="Description">
+            <div class="desc">
+              <button onclick="closeDescription()">X</button>
+              <img src="//cdn.hbogo.eu/images/2608A8DF-AFAD-4B00-80ED-79DECCEEB0DD/561_316.jpg" alt="Movie image" width="400" height="200">
+              <p>Synopsis: Someone killed someone something something poop lol</p>
+            </div>
+          </div>
+
+
+        <div class="spacer"></div>
+        
+    </main>
+
+    <footer>
+
+      <h6>&copy; Copyright 2020 Aide na moreto</h6>
+
+    </footer>
+</body>
+</html>

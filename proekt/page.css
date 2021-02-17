@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    margin:0;
+  }
+
+
+    /* Everything in navbar */
+
+
+    header {
+      /* overflow: hidden;  */
+      background-color: #333;
+      min-height: 48px;
+      position:sticky;
+      top:0;
+    }
+    
+    .navbar a {
+      float: left;
+      font-size: 18px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      cursor:pointer;
+    }
+    
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+    
+    .dropdown .dropbtn {
+      font-size: 18px;  
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+    
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color:darkred;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 130px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  
+    .spacer {
+      height: 1000px;
+      }
+  
+  .rightside{
+      float:right;
+      } 
+  
+  .input{
+      padding:6px;
+      border:none;
+      margin-top:8px;
+      margin-right:16px;
+      font-size:17px;
+      float:left;
+  }
+
+  footer{
+    background-color: darkred;
+    padding:3px;
+    text-align:center;
+    border: none;
+    bottom:0;
+    width:100%;
+  }
+
+  .navbar .icon {
+    display: none;
+  }
+
+  /* Login Popup */
+
+  .login-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    border: 3px solid #727272;
+  }
+
+
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: rgb(62, 63, 61);
+  }
+
+
+  .form-container input[type=text], .form-container input[type=password] {
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    width:90%;
+  }
+
+
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+
+  .form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+
+
+  .form-container .cancel {
+    background-color: red;
+  }
+
+  /* Movie descriptions */
+
+  #Description {
+    position: fixed;
+    display: none;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    flex-direction: row;
+  }
+  
+  .desc{
+    max-width: 400px;
+    padding: 10px;
+    background-color: rgb(62, 63, 61);
+  }
+
+
+  /* Responsiveness */
+
+  @media screen and (max-width: 600px) {
+    .navbar a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+    .navbar.responsive {position: relative;}
+    .navbar.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .navbar.responsive .dropdown {float: none;}
+    .navbar.responsive .dropdown-content {position: relative;}
+    .navbar.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+    .movies, .navbar {   
+      flex-direction: column;
+    }
+    .rightside{display:none;}
+  }
